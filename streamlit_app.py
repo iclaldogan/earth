@@ -8,7 +8,7 @@ import cartopy.feature as cfeature
 from sklearn.linear_model import LinearRegression
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
-file_path = '/kaggle/input/turkey-earthquakes-1915-2024-feb/turkey_earthquakes(1915-2024_feb).csv'
+file_path = 'turkey_earthquakes(1915-2024_feb).csv'
 earthquakes_df = pd.read_csv(file_path)
 
 earthquakes_df['Olus_datetime'] = pd.to_datetime(earthquakes_df['Olus tarihi'] + ' ' + earthquakes_df['Olus zamani'], errors='coerce')
